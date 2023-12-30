@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--keyboard colors-->
+    <color name="keyboard_background_color">#50C6F4</color>
+    <color name="keyboard_divider">#1E6B89</color>
+    <color name="keyboard_pressed">#2B7A99</color>
 </resources>

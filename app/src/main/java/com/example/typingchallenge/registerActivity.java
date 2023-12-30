@@ -45,7 +45,7 @@ public class registerActivity extends AppCompatActivity {
         EditText registration_pass = findViewById(R.id.registration_pass);
         EditText registration_passConfirm = findViewById(R.id.registration_confirmpass);
         Button registrationButton = findViewById(R.id.registration_button);
-        TextView signUp = findViewById(R.id.signUpText);
+        TextView signUp = findViewById(R.id.signInText);
         TextView guestMode = findViewById(R.id.guestMode);
 
         signUp.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +61,7 @@ public class registerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(registerActivity.this, "You entered the guest mode, sign up to get on the leaderboard!", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(registerActivity.this, MainActivity.class);
+                Intent intent = new Intent(registerActivity.this, MainGameActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -123,7 +123,7 @@ public class registerActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Please verify your e-mail!", Toast.LENGTH_LONG).show();
                     saveUserToDatabase()    ;
-                    startActivity(new Intent(registerActivity.this, MainActivity.class));
+                    startActivity(new Intent(registerActivity.this, MainGameActivity.class));
                     finish();
                 } else {
                     Toast.makeText(getApplicationContext(), "Failed to send verification email.", Toast.LENGTH_SHORT).show();

@@ -7,4 +7,5 @@
     <string name="e_mail_address">E-mail address</string>
     <string name="registration_page">Registration Page</string>
     <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_page">Login Page</string>
 </resources>
