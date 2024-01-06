@@ -60,7 +60,7 @@ public class registerActivity extends AppCompatActivity {
         guestMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(registerActivity.this, "You entered the guest mode, sign up to get on the leaderboard!", Toast.LENGTH_LONG).show();
+                Toast.makeText(registerActivity.this, "You entered the guest mode, sign up to get on the leaderboard!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(registerActivity.this, MainGameActivity.class);
                 startActivity(intent);
                 finish();
